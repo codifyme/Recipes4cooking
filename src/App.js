@@ -4,9 +4,10 @@ import { SearchBox } from './components/search-box/search-box.component';
 import { SearchFilter } from './components/search-filter/search-filter.component';
 import './App.css';
 
+console.log(`${process.env.REACT_APP_RECIPE_APP_KEY}`);
 const App = () => {
-  const APP_ID = ' ';
-  const APP_KEY = ' ';
+  const APP_ID = `${process.env.REACT_APP_RECIPE_APP_ID}`;
+  const APP_KEY = `${process.env.REACT_APP_RECIPE_APP_KEY}`;
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
