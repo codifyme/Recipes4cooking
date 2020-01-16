@@ -46,7 +46,7 @@ const App = () => {
   return (
     <div className='App'>
       <header className='header'>
-        <h1 className='title'>Strange Recipes Finder</h1>
+        <h1 className='title'>Exotic Recipe Finder</h1>
         <form onSubmit={getSearch} className='search-form'>
           <SearchBox updateSearch={updateSearch} placeholder='Search recipe' />
         </form>
